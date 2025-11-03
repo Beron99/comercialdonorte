@@ -1,0 +1,12 @@
+# SGC - Sistema de Gestão de Capacitações
+# Redireciona tudo para a pasta public
+
+# Habilita o rewrite engine
+RewriteEngine On
+
+# Se a requisição não for para a pasta public, redireciona
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^(.*)$ public/$1 [L]
+
+# Define página inicial
+DirectoryIndex public/index.php

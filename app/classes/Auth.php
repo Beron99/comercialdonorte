@@ -360,6 +360,11 @@ class Auth {
      * @return bool
      */
     public static function checkSessionTimeout() {
+        // Se não está logado, não precisa verificar timeout
+        if (!self::isLogged()) {
+            return false;
+        }
+
         $timeout = 1800; // 30 minutos
 
         if (isset($_SESSION['login_time'])) {

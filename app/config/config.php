@@ -21,7 +21,7 @@ define('LOGS_PATH', BASE_PATH . 'logs/');
 define('TEMP_PATH', BASE_PATH . 'temp/');
 
 // Configurações de URL
-define('BASE_URL', 'https://comercial.ideinstituto.com.br/');
+define('BASE_URL', 'https://comercial.ideinstituto.com.br/public/');
 define('ASSETS_URL', BASE_URL . 'assets/');
 define('UPLOAD_URL', BASE_URL . 'uploads/');
 

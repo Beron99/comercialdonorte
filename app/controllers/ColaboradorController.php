@@ -35,7 +35,7 @@ class ColaboradorController {
     /**
      * Processa cadastro
      */
-    public function processar Cadastro() {
+    public function processarCadastro() {
         if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
             return ['success' => false, 'message' => 'Método inválido'];
         }

@@ -1,0 +1,13 @@
+# Protege arquivos SQL e de migração
+# Permite apenas executar_migracao.php via navegador
+
+<FilesMatch "\.(sql)$">
+    Order deny,allow
+    Deny from all
+</FilesMatch>
+
+# Permite acesso ao executar_migracao.php
+<Files "executar_migracao.php">
+    Order allow,deny
+    Allow from all
+</Files>
