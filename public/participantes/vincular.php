@@ -16,6 +16,9 @@ require_once __DIR__ . '/../../app/models/Colaborador.php';
 require_once __DIR__ . '/../../app/controllers/ParticipanteController.php';
 require_once __DIR__ . '/../../app/controllers/TreinamentoController.php';
 
+// Verifica autenticação
+Auth::requireLogin(BASE_URL);
+
 // Verifica se treinamento foi informado
 $treinamentoId = $_GET['treinamento_id'] ?? 0;
 

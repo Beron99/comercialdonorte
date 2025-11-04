@@ -174,16 +174,9 @@
         </li>
 
         <li>
-            <a href="<?php echo BASE_URL; ?>participantes/vincular.php">
+            <a href="<?php echo BASE_URL; ?>participantes/">
                 <span class="icon">✅</span>
                 <span class="text">Participantes</span>
-            </a>
-        </li>
-
-        <li>
-            <a href="<?php echo BASE_URL; ?>frequencia/registrar.php">
-                <span class="icon">📝</span>
-                <span class="text">Frequência</span>
             </a>
         </li>
 
@@ -193,10 +186,10 @@
                 <span class="text">Relatórios</span>
             </a>
             <ul class="submenu" id="submenu-relatorios">
-                <li><a href="<?php echo BASE_URL; ?>relatorios/dashboard.php">Dashboard</a></li>
-                <li><a href="<?php echo BASE_URL; ?>relatorios/mensal.php">Mensal</a></li>
-                <li><a href="<?php echo BASE_URL; ?>relatorios/anual.php">Anual</a></li>
-                <li><a href="<?php echo BASE_URL; ?>relatorios/comparativo.php">Comparativo</a></li>
+                <li><a href="<?php echo BASE_URL; ?>relatorios/dashboard.php">📊 Dashboard</a></li>
+                <li><a href="<?php echo BASE_URL; ?>relatorios/geral.php">📋 Relatório Geral</a></li>
+                <li><a href="<?php echo BASE_URL; ?>relatorios/departamentos.php">🏢 Por Departamento</a></li>
+                <li><a href="<?php echo BASE_URL; ?>relatorios/matriz.php">📋 Matriz de Capacitações</a></li>
             </ul>
         </li>
 

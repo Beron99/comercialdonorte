@@ -193,25 +193,66 @@ Todas as tabelas possuem:
 
 ---
 
-## ⏳ MÓDULOS PENDENTES
+## ✅ MÓDULO: PARTICIPANTES (100% Concluído)
 
-### Participantes
-- Vinculação de colaboradores aos treinamentos
-- Registro de check-in
-- Avaliação de reação
-- Status de participação (Presente, Ausente, Justificado)
+### Status: ✅ Completo
+
+### Arquivos Criados
+- **Model:** `app/models/Participante.php`
+- **Controller:** `app/controllers/ParticipanteController.php`
+- **Views:**
+  - `public/participantes/index.php` - Redireciona para seleção de treinamento
+  - `public/participantes/vincular.php` - Vincular colaboradores ao treinamento
+  - `public/participantes/gerenciar.php` - Gerenciar participantes vinculados
+  - `public/participantes/avaliar.php` - Avaliar participante (Kirkpatrick)
+  - `public/participantes/actions.php` - Ações (check-in, desvincular, exportar)
+
+### Funcionalidades Implementadas
+- ✅ Vinculação múltipla de colaboradores
+- ✅ Sistema de cards interativos para seleção
+- ✅ Filtros (busca, nível, departamento)
+- ✅ Check-in de participantes
+- ✅ Avaliação em 3 níveis (Modelo Kirkpatrick)
+- ✅ Estatísticas de participação
+- ✅ Exportação para CSV
+- ✅ Controle de permissões por nível
+
+### Correções Realizadas
+- **2025-01-XX:** Corrigido Auth::checkAuth() para Auth::requireLogin()
+
+---
+
+## ✅ MÓDULO: RELATÓRIOS (100% Concluído)
+
+### Status: ✅ Completo
+
+### Arquivos Criados
+- **Model:** `app/models/Relatorio.php`
+- **Controller:** `app/controllers/RelatorioController.php`
+- **Views:**
+  - `public/relatorios/dashboard.php` - Dashboard principal
+  - `public/relatorios/departamentos.php` - Por departamento
+  - `public/relatorios/matriz.php` - Matriz de capacitações
+  - `public/relatorios/actions.php` - Exportação CSV
+
+### Funcionalidades Implementadas
+- ✅ Dashboard com estatísticas gerais
+- ✅ Treinamentos mais realizados
+- ✅ Colaboradores mais capacitados
+- ✅ Distribuição por tipo
+- ✅ Relatório por departamento
+- ✅ Matriz de capacitações
+- ✅ Exportação CSV
+- ✅ Filtros e análises
+
+---
+
+## ⏳ MÓDULOS PENDENTES
 
 ### Frequência
 - Registro de presença por data/sessão
 - QR Code para check-in
 - Relatório de frequência
-
-### Relatórios
-- Dashboard com gráficos
-- Relatório mensal
-- Relatório anual
-- Comparativos
-- Matriz de capacitações
 
 ### Integração WordPress
 - Sincronização de dados
