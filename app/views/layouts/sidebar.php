@@ -160,10 +160,15 @@
         </li>
 
         <li>
-            <a href="<?php echo BASE_URL; ?>colaboradores/listar.php">
+            <a href="#" onclick="toggleSubmenu('colaboradores'); return false;">
                 <span class="icon">👥</span>
                 <span class="text">Colaboradores</span>
             </a>
+            <ul class="submenu" id="submenu-colaboradores">
+                <li><a href="<?php echo BASE_URL; ?>colaboradores/listar.php">📋 Listar Colaboradores</a></li>
+                <li><a href="<?php echo BASE_URL; ?>colaboradores/cadastrar.php">➕ Cadastrar Novo</a></li>
+                <li><a href="<?php echo BASE_URL; ?>colaboradores/gerenciar_senhas.php">🔑 Gerenciar Senhas do Portal</a></li>
+            </ul>
         </li>
 
         <li>
